@@ -1,7 +1,442 @@
 <!DOCTYPE html>
-<html>
-<body>
-    <h1>Chào mừng đến với trang web của tôi!</h1>
-    <p>Trang web này chạy trên GitHub Pages.</p>
-</body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nguyễn Khắc Trung Kiên | Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <button
+        class="mode-toggle"
+        id="modeToggle"
+        aria-label="Toggle dark/light mode"
+      >
+        <i class="fas fa-moon"></i>
+      </button>
+      <h1 class="style3" style="margin-bottom: 0">Nguyễn Khắc Trung Kiên</h1>
+      <div style="color: #aaa; font-size: 1rem">normalperson</div>
+      <nav>
+        <a href="#about">About</a>
+        <!-- <a href="#publications">Publications</a> -->
+        <a href="#cv">CV</a>
+        <a href="#openprism">OpenPrism Labs</a>
+        <a href="#projects">Projects</a>
+      </nav>
+    </header>
+    <div class="container">
+  <section id="about" class="about">
+        <h2 class="section-title">About</h2>
+        <div
+          class="style2 highlight-role"
+          style="font-size: 1.15rem; font-weight: 600; margin-bottom: 8px"
+        >
+          AI/ML Engineer & Researcher
+        </div>
+        <!--
+      <p class="style2" style="margin-bottom:8px;">
+        <span style="color:#aaa;font-size:0.98rem;">Background:</span><br>
+        Competitive Programmer<br>
+        Newbie in Web Dev and CyberSec<br>
+        Anime Editor / VFX Editor<br>
+        Beginner Self-taught (Anime) Pianist<br>
+        Currently studying Digital Arts
+      </p>
+      -->
+        <ul id="buttons01" class="style1 buttons">
+          <li>
+            <a
+              href="https://www.facebook.com/lostdrip.nktrgkien/"
+              class="button n01"
+              target="_blank"
+              ><i class="fab fa-facebook"></i>
+              <span class="label">Facebook</span></a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/normalpersonidk/"
+              class="button n02"
+              target="_blank"
+              ><i class="fab fa-instagram"></i>
+              <span class="label">Instagram</span></a
+            >
+          </li>
+          <li>
+            <a
+              href="https://twitter.com/normankr07"
+              class="button n03"
+              target="_blank"
+              ><i class="fab fa-twitter"></i>
+              <span class="label">Twitter</span></a
+            >
+          </li>
+          <li>
+            <a
+              href="https://github.com/KNN-07"
+              class="button n04"
+              target="_blank"
+              ><i class="fab fa-github"></i>
+              <span class="label">GitHub</span></a
+            >
+          </li>
+          <li>
+            <a
+              href="https://gitlab.com/KNN-07"
+              class="button n05"
+              target="_blank"
+              ><i class="fab fa-gitlab"></i>
+              <span class="label">GitLab</span></a
+            >
+          </li>
+          <li>
+            <a href="mailto:nktrungkien@protonmail.com" class="button n06"
+              ><i class="fas fa-envelope"></i>
+              <span class="label">Email</span></a
+            >
+          </li>
+        </ul>
+        <!-- Merged contact links (previously in #contact) -->
+        <h3 class="section-title" style="margin-top:18px; font-size:1.1rem; color:var(--subtitle);">Contact & Links</h3>
+        <ul id="buttons04" class="style1 contact-list">
+          <li>
+            <a
+              href="https://www.reddit.com/user/normankr07"
+              class="button n01"
+              target="_blank"
+              ><i class="fab fa-reddit"></i>
+              <span class="label">Reddit</span></a
+            >
+          </li>
+          <li>
+            <a
+              href="https://codeforces.com/profile/normankr07"
+              class="button n02"
+              target="_blank"
+              ><i class="fas fa-code"></i>
+              <span class="label">Codeforces</span></a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.youtube.com/channel/UCW9SRLASDRRO7XuNI9UJkdw"
+              class="button n03"
+              target="_blank"
+              ><i class="fab fa-youtube"></i>
+              <span class="label">Youtube</span></a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.artstation.com/normankr07"
+              class="button n04"
+              target="_blank"
+              ><i class="fab fa-artstation"></i>
+              <span class="label">ArtStation</span></a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.deviantart.com/normank07"
+              class="button n05"
+              target="_blank"
+              ><i class="fab fa-deviantart"></i>
+              <span class="label">DeviantArt</span></a
+            >
+          </li>
+          <li>
+            <a
+              href="https://anilist.co/user/normankr07/"
+              class="button n06"
+              target="_blank"
+              ><i class="fas fa-film"></i> <span class="label">AniList</span></a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.threads.com/@normalpersonidk"
+              class="button n07"
+              target="_blank"
+              ><i class="fas fa-hashtag"></i>
+              <span class="label">Threads</span></a
+            >
+          </li>
+        </ul>
+      </section>
+      <!--
+      <section id="publications" style="display: none">
+        <h2 class="section-title">Publications</h2>
+        <div class="publications-list">
+          <div class="pub-card">
+            <div class="pub-title">Optimizing Neural Architecture Search for Edge Devices</div>
+            <div class="pub-authors">
+              <span class="me">Nguyễn Khắc Trung Kiên</span>, Jane Doe, John Smith
+            </div>
+            <div class="pub-venue">
+              IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2025
+            </div>
+            <div class="pub-actions">
+              <a href="#" class="button small-btn"><i class="fas fa-file-pdf"></i> PDF</a>
+              <a href="#" class="button small-btn"><i class="fas fa-quote-right"></i> BibTeX</a>
+            </div>
+          </div>
+
+          <div class="pub-card">
+            <div class="pub-title">Lightweight Transformers for Real-Time NLP Applications</div>
+            <div class="pub-authors">
+              Alice Johnson, <span class="me">Nguyễn Khắc Trung Kiên</span>, Bob Wilson
+            </div>
+            <div class="pub-venue">
+              International Conference on Learning Representations (ICLR), 2024
+            </div>
+            <div class="pub-actions">
+              <a href="#" class="button small-btn"><i class="fas fa-file-pdf"></i> PDF</a>
+              <a href="#" class="button small-btn"><i class="fas fa-quote-right"></i> BibTeX</a>
+            </div>
+          </div>
+
+          <div class="pub-card">
+            <div class="pub-title">Robustness of Vision-Language Models Against Adversarial Attacks</div>
+            <div class="pub-authors">
+              <span class="me">Nguyễn Khắc Trung Kiên</span>, Sarah Connor
+            </div>
+            <div class="pub-venue">
+              NeurIPS Workshop on Trustworthy AI, 2023
+            </div>
+            <div class="pub-actions">
+              <a href="#" class="button small-btn"><i class="fas fa-file-pdf"></i> PDF</a>
+              <a href="#" class="button small-btn"><i class="fas fa-quote-right"></i> BibTeX</a>
+            </div>
+          </div>
+        </div>
+        <div style="margin-top: 24px; text-align: center;">
+          <a href="https://scholar.google.com" target="_blank" class="button"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
+        </div>
+      </section>
+      -->
+
+      <section id="cv" style="display: none">
+        <h2 class="section-title">Curriculum Vitae</h2>
+        
+        <div class="cv-container">
+          <div class="cv-section">
+            <h3 class="cv-heading"><i class="fas fa-user-graduate"></i> Education</h3>
+            <div class="cv-item">
+              <div class="cv-date">2025 - Present</div>
+              <div class="cv-content">
+                <div class="cv-title">Undergraduate in Artificial Intelligence</div>
+                <div class="cv-place">VNU University of Engineering and Technology</div>
+                <div class="cv-desc">Specializing in AI, Machine Learning, and Computer Vision</div>
+              </div>
+            </div>
+            <div class="cv-item">
+              <div class="cv-date">2022 - 2025</div>
+              <div class="cv-content">
+                <div class="cv-title">High School Diploma (Informatics)</div>
+                <div class="cv-place">Hanoi University of Education High School for the Gifted</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="cv-section">
+            <h3 class="cv-heading"><i class="fas fa-briefcase"></i> Work Experience</h3>
+            <div class="cv-item">
+              <div class="cv-date">Aug 2025 - Present</div>
+              <div class="cv-content">
+                <div class="cv-title">AI Research Assistant</div>
+                <div class="cv-place">UET Research Lab</div>
+                <div class="cv-desc">Building foundational knowledge in Machine Learning, Computer Vision, and Natural Language Processing.</div>
+              </div>
+            </div>
+            <div class="cv-item">
+              <div class="cv-date">Sep 2025 - Present</div>
+              <div class="cv-content">
+                <div class="cv-title">Teaching Assistant for AI Team</div>
+                <div class="cv-place">HNUE, HSGS</div>
+                <div class="cv-desc">Mentoring high school students in AI Basics. Enhanced communication and public speaking skills.</div>
+              </div>
+            </div>
+            <div class="cv-item">
+              <div class="cv-date">Sep 2025 - Dec 2025</div>
+              <div class="cv-content">
+                <div class="cv-title">SkillPixel Instructor</div>
+                <div class="cv-place">SkillPixel</div>
+                <div class="cv-desc">Trained students in preparation for AI Olympiad competitions. Developed curriculum and mentoring materials.</div>
+              </div>
+            </div>
+            <div class="cv-item">
+              <div class="cv-date">Aug 2025</div>
+              <div class="cv-content">
+                <div class="cv-title">Narobit Internship - R&D Department</div>
+                <div class="cv-place">Narobit</div>
+                <div class="cv-desc">Developed Computer Vision System for industrial settings focusing on defect and anomaly detection.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="cv-section">
+            <h3 class="cv-heading"><i class="fas fa-trophy"></i> Honors & Awards</h3>
+            <div class="cv-item">
+              <div class="cv-date">2025</div>
+              <div class="cv-content">
+                <div class="cv-title">First Prize - National AI Olympiad for HS Students (VOAI 2025)</div>
+              </div>
+            </div>
+            <div class="cv-item">
+              <div class="cv-date">2025</div>
+              <div class="cv-content">
+                <div class="cv-title">Bronze Medal - International Olympiad in Artificial Intelligence (IOAI 2025), China</div>
+              </div>
+            </div>
+            <div class="cv-item">
+              <div class="cv-date">2025</div>
+              <div class="cv-content">
+                <div class="cv-title">26th Place - ICPC Asia Ho Chi Minh City Regional Contest</div>
+              </div>
+            </div>
+            <div class="cv-item">
+              <div class="cv-date">2025</div>
+              <div class="cv-content">
+                <div class="cv-title">32nd Place - ICPC Vietnam National Programming Contest</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-top: 32px; text-align: center;">
+          <a href="cv.pdf" class="button" target="_blank"><i class="fas fa-download"></i> Download Full Resume</a>
+        </div>
+      </section>
+
+      <section id="openprism" style="display: none">
+        <h2 class="section-title">OpenPrism Labs</h2>
+        <p class="style2" style="margin-bottom: 8px">
+          OpenPrism Labs is an open-source research organization. Explore
+          projects, research, and tools on the GitHub organization below.
+        </p>
+        <ul class="style1 buttons">
+          <li>
+            <a
+              href="https://github.com/OpenPrism-Labs"
+              class="button n04"
+              target="_blank"
+              ><i class="fab fa-github"></i>
+              <span class="label">OpenPrism Labs on GitHub</span></a
+            >
+          </li>
+        </ul>
+      </section>
+
+      <section id="projects" style="display: none">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-title">ZenFocus</div>
+            <div class="project-desc">
+              A high-fidelity Pomodoro timer with themes, embedded media, and AI-assisted task breakdown.
+            </div>
+            <a href="https://github.com/LunarithmAI/ZenFocus" class="project-link" target="_blank">View Project</a>
+          </div>
+          <div class="project-card">
+            <div class="project-title">LumifaceWeb</div>
+            <div class="project-desc">
+              VLM Beauty Analysis (web version, fully featured app version later).
+            </div>
+            <a href="https://github.com/LunarithmAI/LumifaceWeb" class="project-link" target="_blank">View Project</a>
+          </div>
+          <div class="project-card">
+            <div class="project-title">FaceLogix</div>
+            <div class="project-desc">
+              Smart, secure face recognition attendance system.
+            </div>
+            <a href="https://github.com/LunarithmAI/FaceLogix" class="project-link" target="_blank">View Project</a>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script>
+      // Dark/Light mode toggle logic
+      const modeToggle = document.getElementById("modeToggle");
+      const prefersDark = window.matchMedia(
+        "(prefers-color-scheme: dark)"
+      ).matches;
+      function setMode(mode) {
+        if (mode === "light") {
+          document.body.classList.add("light-mode");
+          modeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+        } else {
+          document.body.classList.remove("light-mode");
+          modeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+        }
+        localStorage.setItem("theme", mode);
+      }
+      // Initial mode
+      const saved = localStorage.getItem("theme");
+      if (saved === "light" || saved === "dark") {
+        setMode(saved);
+      } else {
+        setMode(prefersDark ? "dark" : "light");
+      }
+      modeToggle.onclick = () => {
+        const isLight = document.body.classList.contains("light-mode");
+        setMode(isLight ? "dark" : "light");
+      };
+    </script>
+    <script>
+      // Animate content on load
+      window.addEventListener("DOMContentLoaded", function () {
+        document
+          .querySelectorAll(".container, header, section")
+          .forEach((el) => {
+            el.classList.add("fade-in-up");
+          });
+      });
+    </script>
+    <script>
+      // Tab switching: show/hide sections and highlight active nav link.
+      (function () {
+        const navLinks = document.querySelectorAll('nav a');
+        const sections = Array.from(document.querySelectorAll('section'));
+
+        function setActive(hash) {
+          const id = (hash || '#about').replace('#', '');
+          // Show/hide sections
+          sections.forEach((sec) => {
+            sec.style.display = sec.id === id ? '' : 'none';
+          });
+          // Update nav active class
+          navLinks.forEach((a) => {
+            a.classList.toggle('active', a.getAttribute('href') === ('#' + id));
+          });
+        }
+
+        // Click handlers for nav links
+        navLinks.forEach((a) => {
+          a.addEventListener('click', (e) => {
+            // Allow normal anchor behavior (updates hash), but prevent scrolling jump
+            e.preventDefault();
+            const href = a.getAttribute('href');
+            if (location.hash !== href) {
+              history.pushState(null, '', href);
+              setActive(href);
+            } else {
+              // same hash -> still ensure active state
+              setActive(href);
+            }
+          });
+        });
+
+        // Handle back/forward navigation
+        window.addEventListener('popstate', () => setActive(location.hash));
+
+        // Initial selection based on hash (or default to #about)
+        setActive(location.hash || '#about');
+      })();
+    </script>
+  </body>
 </html>
